@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10131f">
+<title>Farhan Desri Yanto — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap nav">
+  <a class="brand" href="#home">FDY<span>.</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+  <nav class="navlinks" id="navlinks"><a href="#about">Tentang</a><a href="#projects">Proyek</a><a href="#credentials">Sertifikat</a><a href="#experience">Pengalaman</a><a href="#skills">Keahlian</a><a class="nav-cta" href="#contact">Hubungi Saya ↗</a></nav>
+</div></header>
+<main>
+<section class="wrap hero" id="home">
+ <div>
+  <div class="eyebrow">Portfolio · Communication · Creative Media</div>
+  <h1>Ide yang baik.<br><span class="gradient">Cerita yang kuat.</span></h1>
+  <p>Saya <strong>Farhan Desri Yanto</strong> — profesional komunikasi dan media kreatif dengan pengalaman di jurnalistik televisi, kehumasan, produksi audiovisual, video editing, voice over, serta penulisan konten.</p>
+  <div class="hero-actions"><a class="btn btn-primary" href="#projects">Lihat Karya Saya ↘</a><a class="btn btn-secondary" href="mailto:desriyantofarhan@gmail.com">✉ Hubungi Saya</a></div>
+  <div class="quickfacts"><div><strong>3,92 / 4,00</strong>IPK Sarjana</div><div><strong>26 proyek</strong>Proyek freelance tercatat di CV</div><div><strong>8 klien</strong>Pengalaman usaha mandiri</div></div>
+ </div>
+ <div class="hero-art"><div class="orb"></div><div class="floating one">🎬 Video & Storytelling</div><div class="floating two">✦ Communication</div>
+  <div class="art-card"><div class="art-kicker">Personal portfolio / 2026</div><h2>Farhan<br>Desri Yanto.</h2><p>Broadcasting, public relations, creative production, and communication.</p><div class="chips"><span class="chip">Video Editor</span><span class="chip">Voice Over</span><span class="chip">Public Relations</span><span class="chip">Presenter</span></div></div>
+ </div>
+</section>
+<section id="about"><div class="wrap"><div class="section-head"><div><div class="section-label">01 / Tentang Saya</div><h2>Komunikasi dengan<br>sentuhan kreatif.</h2></div><p>Memadukan keterampilan menulis, mengolah informasi, dan memproduksi konten untuk kebutuhan publikasi dan komunikasi organisasi.</p></div>
+ <div class="about-grid"><div class="panel about-highlight"><div><div class="section-label">Profil singkat</div><div class="big-number">3.92<span>/4</span></div><p class="muted">Lulusan terbaik Sarjana Komunikasi dan Penyiaran Islam, IAIN Curup.</p></div><div class="chips"><span class="chip">Jurnalistik</span><span class="chip">Kehumasan</span><span class="chip">Audiovisual</span></div></div>
+ <div class="panel about-copy"><p>Saya memiliki latar belakang <strong>Komunikasi dan Penyiaran Islam</strong> serta pengalaman dalam jurnalistik televisi, kehumasan, dan produksi konten audiovisual. Saya terbiasa menyusun naskah berita, press release, materi informasi publik, mengedit video, dan mengisi suara.</p><p>Saat ini saya menempuh <strong>PPG Prajabatan bidang Broadcasting dan Perfilman di Universitas Negeri Surabaya</strong>. Saya tertarik pada pekerjaan yang mempertemukan komunikasi strategis, storytelling, media digital, dan produksi kreatif.</p><div class="stats"><div class="stat"><strong>2021–2025</strong><span>Sarjana Komunikasi</span></div><div class="stat"><strong>2025–2026</strong><span>PPG Prajabatan</span></div><div class="stat"><strong>8 / 26</strong><span>Klien / proyek freelance</span></div></div></div></div>
+</div></section>
+<section id="projects"><div class="wrap"><div class="section-head"><div><div class="section-label">02 / Selected Work</div><h2>Karya & proyek.</h2></div><p>Galeri untuk menampilkan hasil editing, desain, penulisan, voice over, publikasi, serta proyek penelitian. Tambahkan tautan karya agar rekruter bisa melihat hasilnya langsung.</p></div>
+ <div class="filter-row" id="filters"><button class="filter active" data-filter="Video Editing">Video Editing</button><button class="filter" data-filter="Desain Grafis">Desain Grafis</button><button class="filter" data-filter="Penulisan">Penulisan</button><button class="filter" data-filter="Voice Over">Voice Over</button><button class="filter" data-filter="Kehumasan">Kehumasan</button><button class="filter" data-filter="Penelitian & Data">Penelitian & Data</button><button class="filter" data-filter="Produksi Video">Produksi Video</button><button class="filter" data-filter="Lainnya">Lainnya</button></div>
+ <div class="project-grid" id="projectGrid"></div>
+ <dialog class="project-dialog" id="projectDialog" aria-labelledby="projectDialogTitle"><div class="project-dialog-head"><div><span class="category-tag" id="projectDialogCategory"></span><h3 id="projectDialogTitle"></h3></div><button class="tiny-btn" id="closeProjectDialog" type="button" aria-label="Tutup detail proyek">Tutup</button></div><div class="project-dialog-media" id="projectDialogMedia"></div><p class="project-dialog-description" id="projectDialogDescription"></p><div class="project-dialog-footer"><span class="year" id="projectDialogYear"></span><a class="project-link" id="projectDialogLink" target="_blank" rel="noopener" hidden>Buka tautan asli ↗</a></div></dialog>
+ <details class="admin-panel"><summary>＋ Tambahkan karya ke portofolio</summary><small>Isi form ini untuk menambahkan karya baru. Data dan media tersimpan di browser/perangkat ini, bukan di server.</small>
+  <form id="projectForm"><div class="form-grid">
+   <div class="field"><label for="pTitle">Judul karya *</label><input id="pTitle" required placeholder="Contoh: Video profil organisasi"></div>
+   <div class="field"><label for="pCategory">Kategori *</label><select id="pCategory" required><option>Video Editing</option><option>Desain Grafis</option><option>Penulisan</option><option>Voice Over</option><option>Kehumasan</option><option>Penelitian & Data</option><option>Produksi Video</option><option>Lainnya</option></select></div>
+   <div class="field"><label for="pYear">Tahun</label><input id="pYear" placeholder="2026"></div>
+   <div class="field"><label for="pLink">Tautan karya (URL)</label><input id="pLink" type="url" placeholder="https://..."></div>
+  <div class="field full"><label for="pMedia">Foto atau video dari perangkat</label><input id="pMedia" type="file" accept="image/*,video/*"><span class="field-hint">Pilih satu file foto atau video. File akan tersimpan di browser ini.</span></div>
+   <div class="field full"><label for="pDesc">Deskripsi singkat *</label><textarea id="pDesc" required placeholder="Jelaskan tujuan proyek dan kontribusi Anda."></textarea></div>
+   <div class="field full"><label for="pCover">Label cover (opsional)</label><input id="pCover" placeholder="Contoh: VIDEO / PRESS RELEASE / VO"></div>
+  </div><div class="form-actions"><button class="btn btn-primary" type="submit">Simpan Karya</button><button class="btn btn-secondary" type="button" id="resetProjects">Pulihkan contoh awal</button></div></form>
+  <div class="edit-note">Form kelola hanya tersedia saat file portofolio dibuka langsung di perangkat Anda. Perubahan tersimpan di browser ini; agar pengunjung melihat proyek terbaru, data dan media perlu dipublikasikan bersama website.</div>
+ </details>
+</div></section>
+<section id="credentials"><div class="wrap"><div class="section-head"><div><div class="section-label">03 / Credentials</div><h2>Sertifikat & pencapaian.</h2></div><p>Bagian ini disiapkan untuk sertifikat pelatihan, beasiswa, penghargaan, dan dokumen pendukung lainnya. Tambahkan tautan sertifikat setelah diunggah ke penyimpanan publik.</p></div>
+ <div class="credentials-grid" id="credentialGrid"></div>
+ <dialog class="project-dialog" id="credentialDialog" aria-labelledby="credentialDialogTitle"><div class="project-dialog-head"><div><span class="category-tag">SERTIFIKAT / PENCAPAIAN</span><h3 id="credentialDialogTitle"></h3></div><button class="tiny-btn" id="closeCredentialDialog" type="button" aria-label="Tutup sertifikat">Tutup</button></div><div class="project-dialog-media" id="credentialDialogMedia"></div><div class="credential-upload-row" id="credentialUploadControl" hidden><label for="credentialDialogUpload">Unggah sertifikat PDF atau gambar</label><input id="credentialDialogUpload" type="file" accept="application/pdf,image/*"></div><div class="project-dialog-footer"><span class="year" id="credentialDialogYear"></span><a class="project-link" id="credentialDialogLink" target="_blank" rel="noopener" hidden>Buka tautan asli ↗</a></div></dialog>
+ <details class="admin-panel"><summary>＋ Tambahkan sertifikat atau pelatihan</summary><small>Data sertifikat disimpan di browser/perangkat ini. Tautkan file PDF atau gambar sertifikat melalui tautan publik.</small>
+ <form id="credentialForm"><div class="form-grid">
+  <div class="field"><label for="cTitle">Nama sertifikat / pencapaian *</label><input id="cTitle" required placeholder="Contoh: Sertifikat Pelatihan"></div>
+  <div class="field"><label for="cIssuer">Penerbit / penyelenggara</label><input id="cIssuer" placeholder="Nama lembaga"></div>
+  <div class="field"><label for="cYear">Tahun</label><input id="cYear" placeholder="2026"></div>
+  <div class="field"><label for="cLink">Tautan sertifikat (URL)</label><input id="cLink" type="url" placeholder="https://..."></div>
+ </div><div class="form-actions"><button class="btn btn-primary" type="submit">Simpan Sertifikat</button><button class="btn btn-secondary" type="button" id="resetCredentials">Pulihkan data awal</button></div></form></details>
+</div></section>
+<section id="experience"><div class="wrap"><div class="section-head"><div><div class="section-label">04 / Experience</div><h2>Pengalaman pilihan.</h2></div><p>Pengalaman kerja, proyek, dan organisasi yang membentuk kemampuan saya dalam mengelola informasi serta memproduksi konten.</p></div>
+ <div class="experience-grid"><div class="panel">
+  <div class="timeline-item"><div class="date">DES 2025 — FEB 2026</div><h3>Peserta Magang Hub Kemnaker RI</h3><div class="muted">Pengelola Kehumasan · Kantor Imigrasi Kelas II Non TPI Muara Enim</div><p>Menulis press release, menyiapkan materi broadcast dan informasi publik, serta mengedit video dan materi visual untuk publikasi.</p></div>
+  <div class="timeline-item"><div class="date">SEP — NOV 2024</div><h3>Magang Jurnalistik BETV</h3><div class="muted">Bengkulu TV</div><p>Mencari narasumber, mengumpulkan informasi, menulis naskah berita, dan mengelola file berita untuk mendukung alur redaksi hingga siap tayang.</p></div>
+  <div class="timeline-item"><div class="date">JUL — OKT 2026</div><h3>Freelance Olah Data, Metodologi & Video Editor</h3><div class="muted">Usaha mandiri · 8 klien / 26 proyek</div><p>Mengolah data kuantitatif dan kualitatif, membantu metodologi penelitian, mengedit video, serta membuat desain brosur dan poster.</p></div>
+ </div><div class="panel">
+  <div class="timeline-item"><div class="date">2024</div><h3>Voice Over — Proyek Bank Indonesia</h3><div class="muted">Film dokumenter “Tinta Emas di Bumi Batavia”</div><p>Mengisi narasi untuk proyek film dokumenter Bank Indonesia Provinsi Bengkulu.</p></div>
+  <div class="timeline-item"><div class="date">2021 — 2025</div><h3>Editor & Talent Produksi Video Kampus</h3><div class="muted">IAIN Curup</div><p>Mengedit film tugas perkuliahan, termasuk pemotongan gambar, pengolahan audio, finalisasi, serta tampil sebagai talent dalam video promosi kampus.</p></div>
+  <div class="timeline-item"><div class="date">2021 — 2022</div><h3>Duta Kampus</h3><div class="muted">IAIN Curup</div><p>Mewakili kampus dalam acara resmi sebagai pembicara, pembawa acara, dan wajah promosi di depan kamera.</p></div>
+  <div class="timeline-item"><div class="date">2025 — 2026</div><h3>PPG Prajabatan — Broadcasting & Perfilman</h3><div class="muted">Universitas Negeri Surabaya</div><p>Mempelajari pedagogi dan praktik mengajar, termasuk penyusunan serta penyampaian materi broadcasting. Praktik pengajaran di SMKN 1 Surabaya.</p></div>
+ </div></div>
+</div></section>
+<section id="skills"><div class="wrap"><div class="section-head"><div><div class="section-label">05 / Capabilities</div><h2>Keahlian yang saya bawa.</h2></div><p>Kombinasi kemampuan kreatif, komunikasi, teknis, dan pengelolaan pekerjaan.</p></div>
+ <div class="skills-grid"><div class="panel skill-box"><h3>Produksi & Kreatif</h3><div class="skill-list"><span>Video Editing</span><span>Voice Over</span><span>Presenting</span><span>Public Speaking</span><span>Desain Grafis</span><span>Konten Media Sosial</span><span>Copywriting</span></div></div>
+ <div class="panel skill-box"><h3>Komunikasi & Riset</h3><div class="skill-list"><span>Kehumasan</span><span>Jurnalistik</span><span>Penulisan Berita</span><span>Press Release</span><span>Penelitian Komunikasi</span><span>Metodologi</span><span>Olah Data</span></div></div>
+ <div class="panel skill-box"><h3>Tools & Pendukung</h3><div class="skill-list"><span>Adobe Premiere Pro</span><span>CapCut</span><span>Canva</span><span>Microsoft Word</span><span>Excel</span><span>PowerPoint</span><span>SPSS</span><span>EViews</span><span>Visual Studio Code</span><span>Manajemen Waktu</span></div></div></div>
+</div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="contact-box"><div><div class="section-label">Let’s work together</div><h2>Ada proyek menarik?</h2><p>Saya terbuka untuk peluang kerja dan kolaborasi di bidang komunikasi, kehumasan, produksi konten, video editing, serta media kreatif.</p><p style="margin-top:12px">Surabaya, Indonesia · Bahasa Indonesia (aktif) · Bahasa Inggris (pasif)</p></div><div class="contact-actions"><a class="btn btn-primary" href="mailto:desriyantofarhan@gmail.com">✉ Email Saya</a><a class="btn btn-secondary" href="https://www.linkedin.com/in/farhan-desriyanto-702492292/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div></section>
+</main>
+<footer class="footer"><div class="wrap"><span>© <span id="yearNow"></span> Farhan Desri Yanto. All rights reserved.</span><span>Designed with purpose · Broadcasting × Communication × Creative Media</span></div></footer>
+<script src="script.js" defer></script>
+</body>
+</html>
